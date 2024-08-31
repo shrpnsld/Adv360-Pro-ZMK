@@ -67,21 +67,31 @@
 
         mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none   &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none   &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &tog 4  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none   &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_DEC  &bl BL_INC  &none  &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &to 4  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_DEC  &bl BL_INC  &none  &none  &none
             >;
         };
 
         experimental {
             bindings = <
-&kp EQUAL             &kp N1         &kp N2              &kp N3          &kp N4              &kp N5  &tog 2                                                                          &mo 3      &kp N6  &kp N7               &kp N8           &kp N9               &kp N0    &kp MINUS
+&kp EQUAL             &kp N1         &kp N2              &kp N3          &kp N4              &kp N5  &tog 2                                                                          &mo 5      &kp N6  &kp N7               &kp N8           &kp N9               &kp N0    &kp MINUS
 &kp TAB               &kp Q          &kp W               &kp E           &kp R               &kp T   &none                                                                           &none      &kp Y   &kp U                &kp I            &kp O                &kp P     &kp BSLH
 &hm LEFT_CONTROL ESC  &kp A          &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_COMMAND F  &kp G   &none     &kp LEFT_COMMAND  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &none      &kp H   &hm RIGHT_COMMAND J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &kp SEMI  &kp SQT
 &kp LSHFT             &kp Z          &kp X               &kp C           &kp V               &kp B                               &kp HOME      &kp PG_UP                                        &kp N   &kp M                &kp COMMA        &kp DOT              &kp FSLH  &kp RSHFT
 &mo 1                 &kp LC(SPACE)  &kp GRAVE           &kp LEFT        &kp RIGHT                   &kp BSPC  &kp DEL           &kp END       &kp PG_DN          &kp ENTER          &kp SPACE          &kp DOWN             &kp UP_ARROW     &kp LBKT             &kp RBKT  &mo 1
+            >;
+        };
+
+        experimental-mod {
+            bindings = <
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &to 0  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_DEC  &bl BL_INC  &none  &none  &none
             >;
         };
     };
