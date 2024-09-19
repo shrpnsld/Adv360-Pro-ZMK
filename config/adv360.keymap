@@ -17,11 +17,11 @@
             bindings = <&kp RET>;
         };
 
-        tmux_widget_1: new_macro {
+        tmux_widget_1: tmux_widget_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp O>;
-            label = "NEW_MACRO";
+            label = "tmux_widget_1";
         };
 
         tmux_widget_2: tmux_widget_2 {
@@ -52,11 +52,11 @@
             label = "TMUX_WIDGET_5";
         };
 
-        tmux_window_close: tmux_new_window {
+        tmux_window_close: tmux_window_close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp LS(X)>;
-            label = "TMUX_NEW_WINDOW";
+            label = "tmux_window_close";
         };
 
         tmux_window_move_left: tmux_window_move_left {
