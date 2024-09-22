@@ -17,14 +17,14 @@
             bindings = <&kp RET>;
         };
 
+        #endif
+
         tmux_win_close: tmux_win_close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp LS(X)>;
             label = "TMUX_WIN_CLOSE";
         };
-
-        #endif
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
