@@ -19,13 +19,6 @@
 
         #endif
 
-        tmux_win_close: tmux_win_close {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LS(X)>;
-            label = "TMUX_WIN_CLOSE";
-        };
-
         tmux_cmd: tmux_cmd {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -63,11 +56,11 @@
 
         fn {
             bindings = <
-&kp F1   &kp F2           &kp F3      &kp F4      &kp F5      &kp F6      &none                                       &mo 0             &kp F7      &kp F8                &kp F9                &kp F10            &kp F11          &kp F12
-&kp F12  &tmux_cmd LS(X)  &trans      &trans      &trans      &trans      &none                                       &none             &trans      &trans                &trans                &trans             &trans           &kp F11
-&trans   &kp F1           &kp F2      &kp F3      &kp F4      &kp F5      &none   &trans  &trans      &trans  &trans  &none             &kp F6      &kp F7                &kp F8                &kp F9             &kp F10          &trans
-&trans   &kp LS(F1)       &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &kp LS(F5)                  &trans      &trans                            &kp LS(F6)  &kp RS(F7)            &kp RS(F8)            &kp LS(F9)         &kp LS(F10)      &trans
-&trans   &trans           &trans      &kp C_PREV  &kp C_NEXT              &trans  &trans  &trans      &trans  &trans  &kp C_PLAY_PAUSE              &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&kp F1         &kp F2           &kp F3           &kp F4                &kp F5                 &kp F6       &none                                       &mo 0             &kp F7       &kp F8                &kp F9                &kp F10            &kp F11          &kp F12
+&tmux_cmd TAB  &tmux_cmd LS(X)  &tmux_cmd LS(N)  &tmux_cmd LEFT_BRACE  &tmux_cmd RIGHT_BRACE  &tmux_cmd X  &none                                       &none             &tmux_cmd T  &tmux_cmd Y           &tmux_cmd U           &tmux_cmd I        &tmux_cmd O      &tmux_cmd LS(S)
+&trans         &kp F1           &kp F2           &kp F3                &kp F4                 &kp F5       &none   &trans  &trans      &trans  &trans  &none             &kp F6       &kp F7                &kp F8                &kp F9             &kp F10          &trans
+&trans         &kp LS(F1)       &kp LS(F2)       &kp LS(F3)            &kp LS(F4)             &kp LS(F5)                   &trans      &trans                            &kp LS(F6)   &kp RS(F7)            &kp RS(F8)            &kp LS(F9)         &kp LS(F10)      &trans
+&trans         &trans           &trans           &kp C_PREV            &kp C_NEXT                          &trans  &trans  &trans      &trans  &trans  &kp C_PLAY_PAUSE               &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
             >;
         };
 
