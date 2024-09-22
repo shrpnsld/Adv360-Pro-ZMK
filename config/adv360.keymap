@@ -17,67 +17,11 @@
             bindings = <&kp RET>;
         };
 
-        tmux_widget_1: tmux_widget_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp O>;
-            label = "tmux_widget_1";
-        };
-
-        tmux_widget_2: tmux_widget_2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp I>;
-            label = "TMUX_WIDGET_2";
-        };
-
-        tmux_widget_3: tmux_widget_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp U>;
-            label = "TMUX_WIDGET_3";
-        };
-
-        tmux_widget_4: tmux_widget_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp Y>;
-            label = "TMUX_WIDGET_4";
-        };
-
-        tmux_widget_5: tmux_widget_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp T>;
-            label = "TMUX_WIDGET_5";
-        };
-
-        tmux_window_close: tmux_window_close {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LS(X)>;
-            label = "tmux_window_close";
-        };
-
-        tmux_window_move_left: tmux_window_move_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp LEFT_BRACE>;
-            label = "TMUX_WINDOW_MOVE_LEFT";
-        };
-
-        tmux_window_move_right: tmux_window_move_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp RIGHT_BRACE>;
-            label = "TMUX_WINDOW_MOVE_RIGHT";
-        };
-
-        tmux_pane_close: tmux_pane_close {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp X>;
-            label = "TMUX_PANE_CLOSE";
+        tmux_cmd: tmux_cmd {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&kp LC(B) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TMUX_CMD";
         };
 
         #endif
@@ -112,11 +56,11 @@
 
         fn {
             bindings = <
-&kp F1   &kp F2      &kp F3      &kp F4                  &kp F5                   &kp F6            &none                                       &mo 0             &kp F7          &kp F8                &kp F9                &kp F10            &kp F11          &kp F12
-&kp F12  &none       &kp F10     &tmux_window_move_left  &tmux_window_move_right  &tmux_pane_close  &none                                       &none             &tmux_widget_5  &tmux_widget_4        &tmux_widget_3        &tmux_widget_2     &tmux_widget_1   &kp F11
-&trans   &kp F1      &kp F2      &kp F3                  &kp F4                   &kp F5            &none   &trans  &trans      &trans  &trans  &none             &kp F6          &kp F7                &kp F8                &kp F9             &kp F10          &trans
-&trans   &kp LS(F1)  &kp LS(F2)  &kp LS(F3)              &kp LS(F4)               &kp LS(F5)                        &trans      &trans                            &kp LS(F6)      &kp RS(F7)            &kp RS(F8)            &kp LS(F9)         &kp LS(F10)      &trans
-&trans   &trans      &trans      &kp C_PREV              &kp C_NEXT                                 &trans  &trans  &trans      &trans  &trans  &kp C_PLAY_PAUSE                  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&kp F1   &kp F2           &kp F3      &kp F4      &kp F5      &kp F6      &none                                       &mo 0             &kp F7      &kp F8                &kp F9                &kp F10            &kp F11          &kp F12
+&kp F12  &tmux_cmd LS(X)  &kp F10     &trans      &trans      &trans      &none                                       &none             &trans      &trans                &trans                &trans             &trans           &kp F11
+&trans   &kp F1           &kp F2      &kp F3      &kp F4      &kp F5      &none   &trans  &trans      &trans  &trans  &none             &kp F6      &kp F7                &kp F8                &kp F9             &kp F10          &trans
+&trans   &kp LS(F1)       &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &kp LS(F5)                  &trans      &trans                            &kp LS(F6)  &kp RS(F7)            &kp RS(F8)            &kp LS(F9)         &kp LS(F10)      &trans
+&trans   &trans           &trans      &kp C_PREV  &kp C_NEXT              &trans  &trans  &trans      &trans  &trans  &kp C_PLAY_PAUSE              &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
             >;
         };
 
