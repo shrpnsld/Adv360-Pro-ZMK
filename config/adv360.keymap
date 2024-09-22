@@ -17,11 +17,11 @@
             bindings = <&kp RET>;
         };
 
-        tmux_cmd: tmux_command {
+        tmux_cmd: tmux_cmd {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LC(B) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TMUX_CMD";
+            label = "tmux_cmd";
         };
 
         #endif
