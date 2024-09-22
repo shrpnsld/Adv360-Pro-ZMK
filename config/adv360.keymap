@@ -17,7 +17,7 @@
             bindings = <&kp RET>;
         };
 
-        tmux_cmd: tmux_cmd {
+        tmux_cmd: tmux_command {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&kp LC(B) &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
