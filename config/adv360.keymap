@@ -86,11 +86,11 @@
 
         fn+shift {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &mo 0   &trans  &trans                 &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none                                       &none   &trans  &trans                 &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &none   &trans  &trans      &trans  &trans  &none   &trans  &tmux_cmd RIGHT_BRACE  &tmux_cmd LEFT_BRACE  &trans  &trans  &tmux_cmd LS(X)
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans                 &trans                &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans                 &trans                &trans  &trans  &trans
+&kp LS(F11)  &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &kp LS(F5)  &none                                       &mo 0   &kp LS(F6)  &kp LS(F7)             &kp LS(F8)            &kp LS(F9)  &kp LS(F10)  &kp LS(F12)
+&trans       &trans      &trans      &trans      &trans      &trans      &none                                       &none   &trans      &trans                 &trans                &trans      &trans       &trans
+&trans       &trans      &trans      &trans      &trans      &trans      &none   &trans  &trans      &trans  &trans  &none   &trans      &tmux_cmd RIGHT_BRACE  &tmux_cmd LEFT_BRACE  &trans      &trans       &tmux_cmd LS(X)
+&trans       &trans      &trans      &trans      &trans      &trans                      &trans      &trans                  &trans      &trans                 &trans                &trans      &trans       &trans
+&trans       &trans      &trans      &trans      &trans                  &trans  &trans  &trans      &trans  &trans  &trans              &trans                 &trans                &trans      &trans       &trans
             >;
         };
     };
