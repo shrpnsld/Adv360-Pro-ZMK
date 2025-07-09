@@ -47,31 +47,31 @@
 
         default_layer {
             bindings = <
-&kp EQUAL             &kp N1     &kp N2                                &kp N3    &kp N4     &kp N5  &kp K_CONTEXT_MENU                                                                        &mo 3         &kp N6  &kp N7    &kp N8        &kp N9    &kp N0    &kp BACKSLASH
-&kp TAB               &kp Q      &kp W                                 &kp E     &kp R      &kp T   &bt BT_SEL 0                                                                              &bt BT_SEL 2  &kp Y   &kp U     &kp I         &kp O     &kp P     &kp MINUS
-&hm LEFT_CONTROL ESC  &kp A      &kp S                                 &kp D     &kp F      &kp G   &bt BT_SEL 1        &kp LEFT_COMMAND  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &bt BT_SEL 3  &kp H   &kp J     &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LSHFT             &kp Z      &kp X                                 &kp C     &kp V      &kp B                                         &kp HOME      &kp PG_UP                                           &kp N   &kp M     &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&mo 1                 &kp GRAVE  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LEFT  &kp RIGHT          &kp BSPC            &kp DEL           &kp END       &kp PG_DN          &kp ENTER          &kp SPACE             &kp DOWN  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 1
+&kp GRAVE             &kp N1  &kp N2                                &kp N3    &kp N4     &kp N5  &kp K_CONTEXT_MENU                                                                        &mo 3         &kp N6  &kp N7    &kp N8        &kp N9    &kp N0    &kp BACKSLASH
+&kp EQUAL             &kp Q   &kp W                                 &kp E     &kp R      &kp T   &bt BT_SEL 0                                                                              &bt BT_SEL 2  &kp Y   &kp U     &kp I         &kp O     &kp P     &kp MINUS
+&hm LEFT_CONTROL ESC  &kp A   &kp S                                 &kp D     &kp F      &kp G   &bt BT_SEL 1        &kp LEFT_COMMAND  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &bt BT_SEL 3  &kp H   &kp J     &kp K         &kp L     &kp SEMI  &kp SQT
+&kp LSHFT             &kp Z   &kp X                                 &kp C     &kp V      &kp B                                         &kp HOME      &kp PG_UP                                           &kp N   &kp M     &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
+&mo 1                 &mo 2   &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LEFT  &kp RIGHT          &kp BSPC            &kp TAB           &kp END       &kp PG_DN          &kp ENTER          &kp SPACE             &kp DOWN  &kp UP_ARROW  &kp LBKT  &kp RBKT  &mo 1
             >;
         };
 
         fn {
             bindings = <
-&kp F11  &kp F1  &kp F2        &kp F3        &kp F4        &kp F5  &none                                       &mo 0             &kp F6       &kp F7                   &kp F8                  &kp F9             &kp F10          &kp F12
-&trans   &trans  &kp N7        &kp N8        &kp N9        &trans  &none                                       &none             &tmux_cmd Y  &tmux_cmd U              &tmux_cmd I             &tmux_cmd O        &tmux_cmd P      &trans
-&trans   &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &none   &trans  &trans      &trans  &trans  &none             &trans       &tmux_cmd RIGHT_BRACKET  &tmux_cmd LEFT_BRACKET  &trans             &trans           &tmux_cmd X
-&mo 4    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                  &trans      &trans                            &trans       &trans                   &trans                  &trans             &trans           &mo 4
-&trans   &trans  &trans        &kp C_PREV    &kp C_NEXT            &trans  &trans  &trans      &trans  &trans  &kp C_PLAY_PAUSE               &kp C_BRIGHTNESS_DEC     &kp C_BRIGHTNESS_INC    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+&kp F11  &kp F1  &kp F2        &kp F3        &kp F4        &kp F5  &none                                           &mo 0             &kp F6       &kp F7                   &kp F8                  &kp F9             &kp F10          &kp F12
+&trans   &trans  &kp N7        &kp N8        &kp N9        &trans  &none                                           &none             &tmux_cmd Y  &tmux_cmd U              &tmux_cmd I             &tmux_cmd O        &tmux_cmd P      &trans
+&trans   &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0  &none   &trans      &trans      &trans  &trans  &none             &trans       &tmux_cmd RIGHT_BRACKET  &tmux_cmd LEFT_BRACKET  &trans             &trans           &tmux_cmd X
+&mo 4    &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans                      &trans      &trans                            &trans       &trans                   &trans                  &trans             &trans           &mo 4
+&trans   &trans  &trans        &kp C_PREV    &kp C_NEXT            &trans  &kp DELETE  &trans      &trans  &trans  &kp C_PLAY_PAUSE               &kp C_BRIGHTNESS_DEC     &kp C_BRIGHTNESS_INC    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
             >;
         };
 
         keypad {
             bindings = <
-&kp EQUAL                &kp N1         &kp N2     &kp N3    &kp N4     &kp N5  &tog 2                                                                          &mo 0      &kp N6  &kp KP_NUM      &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-&kp TAB                  &kp Q          &kp W      &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp KP_N7       &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
-&hm LEFT_CONTROL ESCAPE  &kp A          &kp S      &kp D     &kp F      &kp G   &none     &kp LEFT_COMMAND  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &none      &kp H   &kp KP_N4       &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
-&kp LSHFT                &kp Z          &kp X      &kp C     &kp V      &kp B                               &kp HOME      &kp PG_UP                                        &kp N   &kp KP_N1       &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
-&mo 1                    &kp LC(SPACE)  &kp GRAVE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp END       &kp PG_DN          &kp ENTER          &kp KP_N0          &kp DOWN_ARROW  &kp UP_ARROW  &kp KP_DOT     &kp RBKT         &mo 1
+&kp EQUAL                &kp N1  &kp N2     &kp N3    &kp N4     &kp N5  &tog 2                                                                          &mo 0      &kp N6  &kp KP_NUM      &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
+&kp TAB                  &kp Q   &kp W      &kp E     &kp R      &kp T   &none                                                                           &none      &kp Y   &kp KP_N7       &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
+&hm LEFT_CONTROL ESCAPE  &kp A   &kp S      &kp D     &kp F      &kp G   &none     &kp LEFT_COMMAND  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_COMMAND  &none      &kp H   &kp KP_N4       &kp KP_N5     &kp KP_N6      &kp KP_PLUS      &kp SQT
+&kp LSHFT                &kp Z   &kp X      &kp C     &kp V      &kp B                               &kp HOME      &kp PG_UP                                        &kp N   &kp KP_N1       &kp KP_N2     &kp KP_N3      &kp KP_ENTER     &kp RSHFT
+&mo 1                    &none   &kp GRAVE  &kp LEFT  &kp RIGHT          &kp BSPC  &kp DEL           &kp END       &kp PG_DN          &kp ENTER          &kp KP_N0          &kp DOWN_ARROW  &kp UP_ARROW  &kp KP_DOT     &kp RBKT         &mo 1
             >;
         };
 
